@@ -1,14 +1,15 @@
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import MainContent from "../components/mainContent";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>Query Builder</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      hello grin
+      <MainContent />
     </div>
   );
 }
